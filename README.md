@@ -8,7 +8,7 @@ La aplicacion realiza procesos en simultaneo gracias a la programacion hecha con
 
 Diagrama bloques del software:
 
-![](https://github.com/ADHSoft/OpenBraillePrinter/blob/master/Docs/src/b.png?raw=true)
+![](./Docs/src/b.png?raw=true)
 
 Hardware:
 
@@ -19,7 +19,8 @@ Ejemplo de la programación de las máquinas de estado:
 
 ![](https://github.com/ADHSoft/OpenBraillePrinter/blob/master/Docs/src/c.png?raw=true)
 
-![](https://github.com/ADHSoft/OpenBraillePrinter/blob/master/Docs/src/d.png?raw=true)
+<img style="background-color: #ddd;" src="https://github.com/ADHSoft/OpenBraillePrinter/blob/master/Docs/src/d.png?raw=true">
+</img>
 
 
 Info detallada de las variables de MdEImpresion() :
