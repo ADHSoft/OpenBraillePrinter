@@ -8,7 +8,7 @@ La aplicacion realiza procesos en simultaneo gracias a la programacion hecha con
 
 Diagrama bloques del software:
 
-![](./Docs/src/b.png?raw=true)
+![](https://github.com/ADHSoft/OpenBraillePrinter/blob/master/Docs/src/b.png?raw=true)
 
 Hardware:
 
