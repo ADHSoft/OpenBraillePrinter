@@ -1,5 +1,5 @@
 /*
- * Open Braille Printer (C) 2017-2019 Adhsoft0@gmail.com
+ * Open Braille Printer by Adhsoft0@gmail.com
  * See LICENSE.txt for more details.
 */
 
@@ -58,12 +58,12 @@ int main(void)
 
 	Inicializacion();
 
-    lcdprintf( "O.B.P. Driver","Build Jan 2019");
+    lcdprintf( "O.B.P. Driver","Build Jan 2021");
     reproducir_audio(AUDIO_BIENVENIDO);
 
     delay_s(2); //2 sec delay
 
-    lcdprintf( "(C) AlejandroD","Herme@gmail.com");
+    lcdprintf( " by adhsoft0  ","@gmail.com");
     delay_s(2);
 
 	while(1) {

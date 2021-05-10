@@ -1,0 +1,29 @@
+Looking for building a braille printer? (a.k.a. braille embosser)
+Wanna make a cool school project?
+Well, this is an electronic device you could build yourself.
+Knowledge recommended: Have worked with microcontroller projects before. Ability to make simple electronic PCBs.
+This project is something you can build easily build in less than one month, and get good results.
+
+
+To build the Open Braille Printer, you'll need to:
+Get an old (compatible) printer and take out its original circuits.
+Build aproximately three specific PCBs following the schematics.
+
+Install a push-pull solenoid, in place of the original printing head of the printer.
+Shape the solenoid's tip to a small rounded piece, which will punch one dot at a time on the paper.
+Lastly, upload the OBP firmware through usb to the controller and run it.
+As the software is open source, you can adapt it and upgrade it to your needs, or to match other printers mechanisms.
+
+The OBP started as a simpler project for PIC, made for high school (it's like one of those "cool" arduino projects of today), but after graduating I kept improving it and I recoded it for the more powerful LPC hardware. The software has many months of hard work into, since it was used as a project for a Programming subject of my university.
+
+------------
+
+Some technical specifications: 
+The code was made for the NXP Stick board ( LPC 1769 ).
+Uses a modified Epson(C) LX-810 as the printer.
+
+The previous version that started it all, coded for a PIC microcontroller, was uploaded too. (in another repository)
+ 
+------------
+
+Contact: adhsoft0 (at gmail d0t c0m)

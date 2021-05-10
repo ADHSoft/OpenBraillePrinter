@@ -1,0 +1,35 @@
+
+-------------------
+
+Source filenames start with "AP","PR", or "DR". It means: 
+
+AP: Application layer code. Highest-level code. They should only use PRimitive functions.
+
+PR: Primitives. They bring a sort of API (functions) for the Application files to use. They are the middle man between Application and Driver source files.
+
+DR: Drivers. Code that deals directly with Hardware registers. They expose structures like arrays and structs, for the Primitive files to use.
+
+This convention should be simplificated and/or slightly ignored when incorporating new code.
+
+-------------------
+
+"GOLD" vs "FREE" mode : Gold enables PCM Audio playback, and communication with a PC via UART to USB. Free mode disables this.
+
+This is an old bifurcation made for selling purposes, that will be scratched in next releases (OBP will be gold by default).
+
+-------------------
+
+Main source files to look for:
+
+OBP.c : Main Application (Could be named AP_Printer.c)
+
+DR_tipos.h : Basic data type definitions
+
+DR_infotronic : "Infotronic" is the name of the base board with an extra few hardware. The LPC stick mounts on the base board. This file defines which hardware pins connect to which pins on said board.
+
+
+Note:
+These files are THIRD PARTY LPC libraries: cr_startup_lpc175x_6x.c ; crp.c 
+These files are THIRD PARTY small hardware functions: DR_PLL.* ; DR_pinsel.* ; DR_gpio.* ; DR_timers_hw.c ; *_UART.*
+
+-------------------
