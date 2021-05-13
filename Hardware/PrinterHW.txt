@@ -1,0 +1,52 @@
+ L2 ; L3 ; L5 ; L1 : Horizontal stepping motor coils (single pole motor) ( the motor that moves the printing head )
+ L7 ; L8 ; L6 ; L4 : Vertical stepping motor coils (single pole motor) ( the motor that moves the sheet )
+ direct connection to LX810's motor. Could add protection diodes in antiparallel.
+ These motors connect to the L293D circuit, which is controlled by the EXP6,7,9,8 and EXP12,13,15,14 respectively.
+ Without using Infotronic Developer Board:
+ EXP6= Port3[26]
+ EXP7= Port1[25]
+ EXP8= Port1[22]
+ EXP9= Port1[19]
+ EXP12=Port1[27]
+ EXP13=Port1[24]
+ EXP14=Port1[21]
+ EXP15=Port1[18]
+ 
+ 
+ MARTILLO (HAMMER) :  Solenoidal Coil that pushes a single dot printing metal piece.
+ Using infotronic: Connect to RELAY3
+ Without Infotronic: Connect to a relay circuit that delivers enough power to the coil (example, 12v 3a) and it's controlled by Port0[27]
+ 
+ SENSOR_PAPEL (paper sensor) : direct connection to LX810's paper switch
+ Using infotronic : Connect to ED1 (Entrada Digital 0)
+ Without Infotronic: Connect to Port4[29] and ground
+ 
+ SENSOR_Fin_Carro (head position sensor) : direct connection to LX810's position switch
+ Using infotronic : Connect to ED2 (Entrada Digital 0)
+ Without Infotronic: Connect to Port2[11] and ground
+ 
+ TECLADO (Keyboard) : Any Computer keyboard with a PS/2 interface/connector .
+ CLK Pin :
+ Using infotronic : Connect to EXP5
+ Without Infotronic: Connect to Port0[19]
+ DATA Pin:
+ Using infotronic : Connect to EXP0
+ Without Infotronic: Connect to Port2[7]
+ 
+ Audio Out: Using Headphones without amplifier (possibly dangerous? for the LPC if it draws too much current):
+ Using infotronic : Connect headphones between ground and BR11 Connector, with a 104 capacitor in series. on the H1 jumper connect 2&3.
+ Without Infotronic: Connect headphones between ground and "P0[26] ADO0.3/AOUT" pin , with a 104 capacitor in series.
+ (capacitor could be optional, maybe?)
+ 
+ Audio Out: Using a speaker :
+ Using infotronic : Connect speaker between ground and BR11 Connector ; with H1 jumper connect 2&1 to enable the amplifier circuit, and adjust the volume potentiometer.
+ Without Infotronic: Make or copy the amplifier circuit for the speaker that receives the audio from the "P0[26] ADO0.3/AOUT" Pin.
+ 
+ LCD Display: Connect a 2x16 generic lcd in place of LCDM1 , following the pdfs.
+ 
+ PC Connection: 
+ Using infotronic (UART0): The USB port is CN18
+ Without Infotronic: Use a USB to serial circuit to UART0 (or to UART1 modifying the code).
+ 
+ VCC = 5v
+ 
