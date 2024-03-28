@@ -1,10 +1,10 @@
-  Open Braille Printer Free 
+  Open Braille Printer
   Aplicacion para la plataforma Lpcxpresso Lpc1769 - (Arm Cortex M3) que permite hacer una impresora braille casera.
  
   English:
   Lpcxpresso Lpc1769 Microcontroller app to make a homebrew braille printer.
 
-  (C) 2017 - 2019 adhsoft0@gmail.com
+  2017 - 2019 adhsoft0@gmail.com
 
   Permission to use, copy, modify and/or distribute OBP Free in both binary
   and source form, for non-commercial purposes, is hereby granted without
@@ -24,5 +24,3 @@
 -------------------------------------------------------------------------------
 
 Some common functions or parts included in OBP are from the LPC generic libraries.
-
-Email me if you need a special license .
